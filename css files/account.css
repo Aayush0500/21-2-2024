@@ -1,0 +1,124 @@
+.account-section {
+  display: flex;
+  justify-content: space-between;
+  max-width: 95vw;
+  min-height: 50vh;
+  margin: 15vh 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  margin: auto;
+}
+
+.left-section {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 50px;
+
+}
+
+.right-section {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 50px;
+  margin-left: 35vw;
+}
+
+.account-info {
+  margin-bottom: 20px;
+}
+
+.account-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.user-details {
+  font-size: 16px;
+}
+
+.user-actions {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.btn-secondary {
+  background-color:coral;
+}
+
+.password-section {
+  margin-top: 20px;
+}
+
+.password-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.password-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.password-inputs label {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.password-inputs input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+/* Orders section */
+.your-orders-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background: #088178;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.735);
+  
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+#orders-section {
+  padding: 20px;
+}
+
+.your-orders-heading h1 {
+  color: white;
+  font-size: 24px;
+margin: auto;
+  text-align: center;
+}
+
+.orders-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.orders-table th {
+  background-color: coral;
+}
+

@@ -1,0 +1,154 @@
+.single-pro-image {
+  /* width: 40%; */
+  margin-right: 50px;
+}
+
+#prodetails {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+.prod_detail {
+  display: flex;
+}
+#prodetails .single-pro-details {
+  margin-left: 68px;
+}
+.single-pro-details label {
+  font-size: 25px;
+  margin-top: 25px;
+}
+.single-pro-details  span{
+  font-weight: 800; 
+  font-size: 25px;
+  display:flex;
+  align-items: center;
+}
+
+.prod_des h4 {
+  padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2 {
+  font-weight: 800; 
+  font-size: 25px;
+}
+#prodetails .single-pro-details select,
+#prodetails .single-pro-details input {
+  display: block;
+  padding: 5px 18px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+.prod_weight,
+.prod_quantity {
+  display: flex;
+}
+#prodetails .single-pro-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+#prodetails.single-pro-details input:focus {
+  outline: none;
+}
+#prodetails .single-pro-details button {
+  background-color: #088178;
+  color: #fff;
+  margin-top: 35px;
+}
+#prodetails .single-pro-details span {
+  line-height: 15px;
+}
+.prod_des p {
+  padding: 8px 24px 18px 23px;
+}
+
+@media (max-width: 827px) {
+  .single-pro-image {
+    margin: auto auto;
+    margin-top: 10vw;
+    margin-bottom: 5vw;
+   
+  }
+.single-pro-image img{
+  width: 80vw;
+}
+.single-pro-details  span{
+  font-weight: 800; 
+  font-size: 25px;
+  display:flex;
+  align-items: center;
+
+  text-align: center;
+  margin-bottom: 10px;
+}
+  #prodetails {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .prod_detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #prodetails .single-pro-details {
+    align-items: center;
+    margin: auto auto;
+  }
+  .single-pro-details label {
+    font-size: 25px;
+    margin-top: 2px;
+  }
+
+  .prod_des h4 {
+    padding: 40px 0 20px 0;
+  }
+  #prodetails .single-pro-details h2 {
+ font-size: 25px;
+line-height: 30px;
+
+
+
+
+    
+  }
+  #prodetails .single-pro-details button {
+    background-color: #088178;
+    color: #fff;
+    margin-top: 5px;
+    font-size: 25px;
+  }
+  #prodetails .single-pro-details select,
+  #prodetails .single-pro-details input {
+    display: block;
+    padding: 5px 18px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-top: 2px;
+  }
+  .prod_weight,
+  .prod_quantity {
+    display: flex;
+  }
+  #prodetails .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  #prodetails.single-pro-details input:focus {
+    outline: none;
+  }
+  #prodetails .single-pro-details button {
+    background-color: #088178;
+    color: #fff;
+    padding: 15px 30px 15px 30px;
+  }
+}

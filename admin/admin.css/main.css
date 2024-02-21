@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.company-name {
+    margin-right: auto; /* Push logout button to the right */
+}
+
+.logout-button {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.logout-button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.main-container {
+    display: flex;
+    height: calc(100vh - 50px); /* Subtract header height */
+}
+.main-content {
+    width: 80vw;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.navigation {
+    background-color: #f4f4f4;
+    width: 20vw;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+.navigation a:hover {
+    background-color: #ddd;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+    }
+
+    .navigation.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.main-content {
+    width: 80vw;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.form-column {
+    margin-bottom: 20px;
+}
+
+.form-column label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-column input {
+    width: 40vw;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 2px;
+}
+
+.update-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.update-button:hover {
+    background-color: #2980b9;
+}
+
+.add-button {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #219d54;
+}
+
+.order-table,
+.product-table,
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.order-table th,
+.product-table th,
+.user-table th,
+.order-table td,
+.product-table td,
+.user-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.order-table th,
+.product-table th,
+.user-table th {
+    background-color: #f4f4f4;
+}
+
+.order-table tbody tr:nth-child(even),
+.product-table tbody tr:nth-child(even),
+.user-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.order-table tbody tr:hover,
+.product-table tbody tr:hover,
+.user-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.edit-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-button:hover {
+    background-color: #2980b9;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+
+.delete-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+}
